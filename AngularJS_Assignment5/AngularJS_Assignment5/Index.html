@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="Scripts/intervalApp.js"></script>
+</head>
+<body ng-app="intervalApp">
+    <div ng-controller="intervalController">
+        <h1 ng-init="countdown()">{{time}}</h1>
+
+        <button type="button" data-ng-click="stopTimer()">StopTimerbutton</button>
+    </div>
+
+</body>
+</html>

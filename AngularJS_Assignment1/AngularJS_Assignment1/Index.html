@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="/Scripts/Store.js"></script>
+</head>
+<body ng-app="storeModule">
+    <div ng-controller="storeController">
+        <!--This will do, not prefered though-->
+        {{product}}
+        </br>
+        <!--This looks better!-->
+        Name: {{product.Name}} </br>
+        Price: {{product.Price}}skr </br>
+        Description: {{product.Description}}
+    </div>
+</body>
+</html>

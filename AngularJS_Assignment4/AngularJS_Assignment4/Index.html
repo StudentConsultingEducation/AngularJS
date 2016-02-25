@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="Scripts/navApp.js"></script>
+    <style>
+        li {
+            display: inline;
+        }
+    </style>
+</head>
+<body ng-app="navApp">
+    <div ng-controller="navController">
+        <nav>
+            <ul>
+                <li ng-click="changedisplay('text1')">Text1</li> |
+                <li ng-click="changedisplay('text2')">Text2</li> |
+                <li ng-click="changedisplay('text3')">Text3</li>
+            </ul>
+        </nav>
+        <p ng-if="display == 'text1'">Lorem pisumLorem pisumLorem pisumLorem pisumLorem pisumLorem pisumLorem pisumLorem pisum</p>
+        <p ng-if="display == 'text2'">Dolor sin Amet Dolor sin AmetDolor sin AmetDolor sin AmetDolor sin AmetDolor sin AmetDolor sin Amet</p>
+        <p ng-if="display == 'text3'">TEXT 3TEXT 3TEXT 3TEXT 3TEXT 3TEXT 3TEXT 3TEXT 3TEXT 3TEXT 3TEXT 3TEXT 3TEXT 3TEXT 3TEXT 3</p>
+
+    </div>
+</body>
+</html>
